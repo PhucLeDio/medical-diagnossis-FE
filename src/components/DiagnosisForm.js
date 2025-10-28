@@ -52,6 +52,18 @@ function DiagnosisForm() {
         patientGender: value,
         gender: value === "Nam" ? 2 : 1,
       });
+    } else if (
+      name === "smoke" ||
+      name === "alco" ||
+      name === "active" ||
+      name === "gender" ||
+      name === "cholesterol" ||
+      name === "gluc"
+    ) {
+      setFormData({
+        ...formData,
+        [name]: parseInt(value),
+      });
     } else {
       setFormData({
         ...formData,
