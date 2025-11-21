@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/diagnosis";
+const API_URL = "https://medical-diagnossis-be.vercel.app/api/diagnosis";
+// const API_URL = "http://localhost:5000/api/diagnosis";
 
 function History() {
   const [diagnoses, setDiagnoses] = useState([]);
